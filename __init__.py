@@ -30,7 +30,7 @@ def character_init():
     for i in race_list():
         print(i)
     while the_race is None:
-        the_race = raw_input('\nSelection: ')
+        the_race = input('\nSelection: ')
         if not the_race.lower() in race_list():
             the_race = None
             print("Please choose a race from the list")
@@ -38,7 +38,7 @@ def character_init():
     for i in class_list():
         print(i)
     while the_class is None:
-        the_class = raw_input("\nSelection: ")
+        the_class = input("\nSelection: ")
         if not the_class.lower() in class_list():
             the_class = None
             print("Please choose a class from the list")
